@@ -111,7 +111,6 @@ const spies =  document.querySelectorAll('.apparition');
       }
   };
 
-player.addEventListener("touchstart", jouerPlayer);
 player.addEventListener("click", jouerPlayer);
 
 
@@ -176,7 +175,6 @@ var pageMrkat = function(){
 
 };
 
-videoMrKat.addEventListener("touchstart", pageMrkat);
 videoMrKat.addEventListener("click", pageMrkat);
 
 
@@ -221,8 +219,6 @@ var pageFrendi = function(){
 
 };
 
-
-videoFendi.addEventListener("touchstart", pageFrendi);
 videoFendi.addEventListener("click", pageFrendi);
 
 
@@ -267,7 +263,6 @@ var pageRayban = function(){
 
 };
 
-videoRayban.addEventListener("touchstart", pageRayban);
 videoRayban.addEventListener("click", pageRayban);
 
 
@@ -312,6 +307,4 @@ var pageSurvival = function (){
     });
 };
 
-
-videoJeuxInteractif.addEventListener("touchstart", pageSurvival);
 videoJeuxInteractif.addEventListener("click", pageSurvival);
