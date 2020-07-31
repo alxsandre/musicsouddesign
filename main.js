@@ -251,9 +251,57 @@ videoRayban.addEventListener("click", function(){
 });
 
 
+// VIDEO QUI SOUVRE JEUXVIDEO
+
+
+var videoJeuxInteractif = document.querySelector('.section1 video');
+
+
+var pageSurvival = function(){
+
+      var newDiv = document.createElement("div");
+      section2.prepend(newDiv)
+      document.querySelector('.section2 div').classList.add('video_jeux')
+
+      var newDiv2 = document.createElement("div");
+      document.querySelector('.section2 div').prepend(newDiv2)
+      document.querySelector('.section2 div > div').setAttribute('id', 'videoKaat')
+
+      document.querySelector('.section2 div')
+
+ var videoKaat = document.getElementById('videoKaat');
+
+ var options03 = {
+      id: 365525989,
+      autoplay: true,
+    };
+
+
+    var video01Player = new Vimeo.Player('videoKaat', options03);
+
+
+    // VIDEO QUI SE FERME
+
+    var pageFond = document.querySelector('.section2 div')
+
+    pageFond.addEventListener("click", function(){
+      this.style.animationName = "slideout";
+      setTimeout(function(){pageFond.remove()}, 2000);
+        //pageFond.remove()
+    });
+};
+
+
+videoJeuxInteractif.addEventListener("touchstart", pageSurvival);
+videoJeuxInteractif.addEventListener("click", pageSurvival);
 
 
 
+
+
+
+
+/*
 
 // VIDEO QUI SOUVRE JEUXVIDEO
 
@@ -295,6 +343,12 @@ videoJeuxInteractif.addEventListener("click", function(){
     });
 
 });
+
+
+*/
+
+
+
 
 /*
 
