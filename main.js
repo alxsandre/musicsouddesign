@@ -89,12 +89,17 @@ const spies =  document.querySelectorAll('.apparition');
 })
 
 
+
+
+
+//PLAYER AUDIO
+
   var audio = document.querySelector('#audioCafeMeo');
   var player = document.querySelector('.section3 > div');
   var playLogo = document.querySelector('.section3 > div div');
 
 
-  player.addEventListener("click", function(){
+  var jouerPlayer = function(){
     if (audio.paused) {
         audio.play()
         playLogo.classList.remove('cercle_play')
@@ -104,7 +109,13 @@ const spies =  document.querySelectorAll('.apparition');
         playLogo.classList.remove('cercle_pause')
         playLogo.classList.add('cercle_play')
       }
-  });
+  };
+
+player.addEventListener("touchstart", jouerPlayer);
+player.addEventListener("click", jouerPlayer);
+
+
+
 
 
 
@@ -130,7 +141,7 @@ var videoMrKat = document.querySelector('.section2 video');
 var section2 = document.querySelector('.section2');
 
 
-videoMrKat.addEventListener("click", function(){
+var pageMrkat = function(){
 
       var newDiv = document.createElement("div");
       section2.prepend(newDiv)
@@ -163,14 +174,19 @@ videoMrKat.addEventListener("click", function(){
         //pageFond.remove()
     });
 
-});
+};
+
+videoMrKat.addEventListener("touchstart", pageMrkat);
+videoMrKat.addEventListener("click", pageMrkat);
+
 
 
 
 // VIDEO QUI SOUVRE FENDI
+
 var videoFendi = document.querySelectorAll('.section2 video')[1];
 
-videoFendi.addEventListener("click", function(){
+var pageFrendi = function(){
 
       var newDiv = document.createElement("div");
       section2.prepend(newDiv)
@@ -203,10 +219,11 @@ videoFendi.addEventListener("click", function(){
         //pageFond.remove()
     });
 
-});
+};
 
 
-
+videoFendi.addEventListener("touchstart", pageFrendi);
+videoFendi.addEventListener("click", pageFrendi);
 
 
 
@@ -215,7 +232,7 @@ videoFendi.addEventListener("click", function(){
 
 var videoRayban = document.querySelectorAll('.section2 video')[2];
 
-videoRayban.addEventListener("click", function(){
+var pageRayban = function(){
 
       var newDiv = document.createElement("div");
       section2.prepend(newDiv)
@@ -248,7 +265,12 @@ videoRayban.addEventListener("click", function(){
         //pageFond.remove()
     });
 
-});
+};
+
+videoRayban.addEventListener("touchstart", pageRayban);
+videoRayban.addEventListener("click", pageRayban);
+
+
 
 
 // VIDEO QUI SOUVRE JEUXVIDEO
@@ -257,7 +279,7 @@ videoRayban.addEventListener("click", function(){
 var videoJeuxInteractif = document.querySelector('.section1 video');
 
 
-var pageSurvival = function(){
+var pageSurvival = function (){
 
       var newDiv = document.createElement("div");
       section2.prepend(newDiv)
@@ -275,7 +297,6 @@ var pageSurvival = function(){
       id: 365525989,
       autoplay: true,
     };
-
 
     var video01Player = new Vimeo.Player('videoKaat', options03);
 
@@ -294,103 +315,3 @@ var pageSurvival = function(){
 
 videoJeuxInteractif.addEventListener("touchstart", pageSurvival);
 videoJeuxInteractif.addEventListener("click", pageSurvival);
-
-
-
-
-
-
-
-/*
-
-// VIDEO QUI SOUVRE JEUXVIDEO
-
-
-var videoJeuxInteractif = document.querySelector('.section1 video');
-
-
-videoJeuxInteractif.addEventListener("click", function(){
-
-      var newDiv = document.createElement("div");
-      section2.prepend(newDiv)
-      document.querySelector('.section2 div').classList.add('video_jeux')
-
-      var newDiv2 = document.createElement("div");
-      document.querySelector('.section2 div').prepend(newDiv2)
-      document.querySelector('.section2 div > div').setAttribute('id', 'videoKaat')
-
-      document.querySelector('.section2 div')
-
- var videoKaat = document.getElementById('videoKaat');
-
- var options03 = {
-      id: 365525989,
-      autoplay: true,
-    };
-
-
-    var video01Player = new Vimeo.Player('videoKaat', options03);
-
-
-    // VIDEO QUI SE FERME
-
-    var pageFond = document.querySelector('.section2 div')
-
-    pageFond.addEventListener("click", function(){
-      this.style.animationName = "slideout";
-      setTimeout(function(){pageFond.remove()}, 2000);
-        //pageFond.remove()
-    });
-
-});
-
-
-*/
-
-
-
-
-/*
-
-
-//TEST COMPILER FONCTION
-var videoJeuxInteractif = document.querySelector('.section1 video');
-var section2 = document.querySelector('.section2');
-
-var options03 = {
-  id: 365525989,
-  autoplay: true,
-};
-
-
-
-    function pageVideo () {
-      var newDiv = document.createElement("div");
-      section2.prepend(newDiv)
-      document.querySelector('.section2 div').classList.add('video_jeux')
-
-      var newDiv2 = document.createElement("div");
-      document.querySelector('.section2 div').prepend(newDiv2)
-      document.querySelector('.section2 div > div').setAttribute('id', 'videoKaat')
-
-      document.querySelector('.section2 div')
-
-    var videoKaat = document.getElementById('videoKaat');
-
-    var  video01Player = new Vimeo.Player('videoKaat', options03);
-
-    // VIDEO QUI SE FERME
-
-    var pageFond = document.querySelector('.section2 div')
-
-    pageFond.addEventListener("click", function(){
-      this.style.animationName = "slideout";
-      setTimeout(function(){pageFond.remove()}, 2000);
-        //pageFond.remove()
-      });
-    };
-
-
-//console.log(pageVideo(options03))
-videoJeuxInteractif.addEventListener("click", pageVideo);
-*/
