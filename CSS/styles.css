@@ -1,5 +1,5 @@
 @media (max-width: 768px) {
-  p, video {
+  p, video, img {
     width: 100%;
     padding: 2%;
     box-sizing: border-box;
@@ -135,7 +135,7 @@
     top: 30vw;
   }
 
-  .section1 video {
+  .section1 video, .section1 img {
     position: absolute;
     top: -5vw;
     left: 15vw;
@@ -156,7 +156,7 @@
     overflow: scroll;
   }
 
-  .section2 video:first-of-type {
+  .section2 video:first-of-type, .section2 img:first-of-type {
     top: 50px;
     left: 10px;
     width: 66%;
@@ -169,7 +169,7 @@
     overflow: scroll;
   }
 
-  .section2 video:nth-of-type(2) {
+  .section2 video:nth-of-type(2), .section2 img:nth-of-type(2) {
     top: 59vw;
     right: 0;
     width: 80%;
@@ -185,7 +185,7 @@
     z-index: 5;
   }
 
-  .section2 video:nth-of-type(3) {
+  .section2 video:nth-of-type(3), .section2 img:nth-of-type(3) {
     top: 110vw;
     width: 70%;
     padding: 2%;
@@ -304,7 +304,7 @@
     transform: scale(1.2) rotate(360deg);
   }
 
-  p, video {
+  p, video, img {
     position: absolute;
   }
 
@@ -319,7 +319,7 @@
     width: 15vw;
   }
 
-  .section1 video {
+  .section1 video, .section1 img {
     position: absolute;
     top: -5vw;
     right: 30px;
@@ -365,7 +365,7 @@
     overflow: scroll;
   }
 
-  .section2 video:first-of-type {
+  .section2 video:first-of-type, .section2 img:first-of-type {
     top: 50px;
     left: 10px;
     width: 66%;
@@ -379,7 +379,7 @@
     overflow: scroll;
   }
 
-  .section2 video:nth-of-type(2) {
+  .section2 video:nth-of-type(2), .section2 img:nth-of-type(2) {
     top: 430px;
     right: -20px;
     width: 66%;
@@ -396,7 +396,7 @@
     z-index: 5;
   }
 
-  .section2 video:nth-of-type(3) {
+  .section2 video:nth-of-type(3), .section2 img:nth-of-type(3) {
     top: 900px;
     width: 66%;
     padding: 2%;
@@ -535,7 +535,7 @@ li {
   color: #ebdfca;
 }
 
-.section2 video {
+.section2 video, .section2 img {
   background-color: #ebdfca;
 }
 
@@ -552,13 +552,13 @@ h2 {
   display: block;
   padding-right: 1vw;
   margin: 2vw;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   align-items: center;
   position: absolute;
 }
 
-video {
+video, img {
   cursor: pointer;
 }
 
@@ -575,7 +575,7 @@ video {
   background-color: #ebdfca;
 }
 
-.section1 video {
+.section1 video, .section1 img {
   padding: 2%;
   background-color: #415575;
 }
@@ -638,7 +638,7 @@ iframe {
     transform: translate(-100vw);
   }
 }
-.section2 p, .section2 video {
+.section2 p, .section2 video, .section2 img {
   position: absolute;
 }
 

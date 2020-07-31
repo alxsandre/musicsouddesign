@@ -73,7 +73,7 @@ color: #415575;
 // CORPS DE LA PAGE
 
 
-p, video{
+p, video, img{
   position: absolute;
 }
 
@@ -89,7 +89,7 @@ p{
   width : 15vw;
 }
 
-.section1 video{
+.section1 video, .section1 img{
   position: absolute;
   top: -5vw;
   right : 30px;
@@ -157,7 +157,7 @@ p{
 }
 
 
-.section2 video:first-of-type{
+.section2 video:first-of-type, .section2 img:first-of-type{
   top: 50px;
   left: 10px;
   width : 66%;
@@ -174,7 +174,7 @@ p{
 
 }
 
-.section2 video:nth-of-type(2){
+.section2 video:nth-of-type(2), .section2 img:nth-of-type(2){
   top: 430px;
   right: -20px;
   width : 66%;
@@ -192,7 +192,7 @@ p{
   z-index: 5;
 }
 
-.section2 video:nth-of-type(3){
+.section2 video:nth-of-type(3), .section2 img:nth-of-type(3){
   top : 900px;
   width : 66%;
   padding: 2%;

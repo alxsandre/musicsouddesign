@@ -137,7 +137,7 @@ allVideo.forEach(function (videoItem){
 
 // VIDEO QUI SOUVRE MRKAT
 
-var videoMrKat = document.querySelector('.section2 video');
+var videoMrKat = document.querySelector('.section2 img');
 var section2 = document.querySelector('.section2');
 
 
@@ -184,7 +184,7 @@ videoMrKat.addEventListener("click", pageMrkat);
 
 // VIDEO QUI SOUVRE FENDI
 
-var videoFendi = document.querySelectorAll('.section2 video')[1];
+var videoFendi = document.querySelectorAll('.section2 img')[1];
 
 var pageFrendi = function(){
 
@@ -230,7 +230,7 @@ videoFendi.addEventListener("click", pageFrendi);
 // VIDEO QUI SOUVRE RAYBAN
 
 
-var videoRayban = document.querySelectorAll('.section2 video')[2];
+var videoRayban = document.querySelectorAll('.section2 img')[2];
 
 var pageRayban = function(){
 
@@ -276,7 +276,7 @@ videoRayban.addEventListener("click", pageRayban);
 // VIDEO QUI SOUVRE JEUXVIDEO
 
 
-var videoJeuxInteractif = document.querySelector('.section1 video');
+var videoJeuxInteractif = document.querySelector('.section1 img');
 
 
 var pageSurvival = function (){
