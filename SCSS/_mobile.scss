@@ -200,7 +200,7 @@ li{
   width :34%;
   right: 1vw;
   top: 3vw;
-  overflow: scroll;
+  overflow: hidden;
 
 }
 
@@ -217,7 +217,7 @@ li{
 .section2 p:nth-of-type(2){
   top: 50vw;
   width :27%;
-  overflow: scroll;
+  overflow: hidden;
 
 }
 
@@ -234,7 +234,7 @@ li{
   right: 0;
   font-size: 2.3vh;
   width :30%;
-  overflow: scroll;
+  overflow: hidden;
   z-index: 5;
 }
 
