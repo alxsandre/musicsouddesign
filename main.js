@@ -10,7 +10,7 @@ btnToggleNav.addEventListener("click", function () {
 
 // Apparition des paragraphes
 
-const ratio = .8
+const ratio = .01
 const options = {
   root: null,
   rootMargin: '0px',
@@ -308,3 +308,36 @@ var pageSurvival = function (){
 };
 
 videoJeuxInteractif.addEventListener("click", pageSurvival);
+
+
+
+// Progess scroll bar
+
+let progress = document.getElementById('progressbar');
+let progress2 = document.getElementById('progressbar2');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+  let progressHeight = (window.pageYOffset / totalHeight) * 100;
+  progress.style.height = progressHeight + "%";
+  progress2.style.height = progressHeight + "%";
+
+}
+
+
+// Flêches retirées au scroll
+
+window.addEventListener('scroll', function() {
+
+  if (window.pageYOffset > 2) {
+    document.querySelector('.arrow').style.display = "none";
+  } else {
+    document.querySelector('.arrow').style.display = "block";
+  }
+})
+
+//scroll des petites barres
+document.addEventListener('scroll', function(e) {
+  console.log(window.pageYOffset)
+  document.querySelector('.barre').style.transform = "rotateY("+ window.pageYOffset +"deg)";
+  console.log(document.querySelector('.barre').style.transform = "rotateY("+ window.pageYOffset +"deg)")
+});

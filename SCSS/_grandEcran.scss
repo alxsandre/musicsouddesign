@@ -14,16 +14,29 @@
   display: none;
 }
 
-
+/*
+#cubeRetourne{
+  transform: rotate(-35deg);
+  background-color: #ebdfca;
+  position: fixed;
+  top: -40vw;;
+  right: 30px;
+  width : 20vw;
+  height: 72vw;
+  z-index: -1;
+}
+*/
 
 .menu{
+  display: none;
+  transform: rotate(-35deg);
   order : 3;
   position: fixed;
-  top: 30%;
+  top: 5%;
   right: 30px;
   width : 15%;
   text-align: right;
-  display: flex;
+//  display: flex;
   flex-direction: column;
 }
 
